@@ -1,0 +1,42 @@
+Numpy:
+
+1. Gaussian elimination: 					np.linalg.solve()
+2. Jaobi method:							No function
+3. Gauss-Seidal method: 					No function
+4. Relaxation method: 						No function
+5. Conjugate Gradient method:			 	scipy.sparse.linalg.cg
+6. LU decomposition: 						scipy.linalg.lu
+7. QR decomposition: 						numpy.linalg.qr()
+8. SVD :									numpy.linalg.svd
+9. real symmetric matrix: 					numpy.linalg.eigh
+10. complex Hermitian matrix: 				numpy.linalg.eigh
+11. general real/ complex nxn matrix: 		numpy.linalg.eigvalsh
+
+
+GSL:
+
+1. Gaussian elimination: 					int gsl_linalg_LU_decomp(gsl_matrix * A, gsl_permutation * p, int * signum)
+2. Jaobi method:							No function
+3. Gauss-Seidal method: 					No function
+4. Relaxation method: 						No function
+5. Conjugate Gradient method:			 	int gsl_multimin_fdfminimizer
+6. LU decomposition: 						int gsl_linalg_LU_decomp
+7. QR decomposition: 						int gsl_linalg_QR_decomp
+8. SVD :									int gsl_linalg_SV_decomp
+9. real symmetric matrix: 					int gsl_eigen_symm
+10. complex Hermitian matrix: 				...............
+11. general real/ complex nxn matrix: 		int gsl_eigen_gen
+
+LAPACK:
+
+1. Gaussian elimination: 					xGETRF
+2. Jaobi method:							No function
+3. Gauss-Seidal method: 					No function
+4. Relaxation method: 						No function
+5. Conjugate Gradient method:			 	No function
+6. LU decomposition: 						xGETRF
+7. QR decomposition: 						xGETRF
+8. SVD :									DGESVD
+9. real symmetric matrix: 					SSYEV
+10. complex Hermitian matrix: 				CHEEV
+11. general real/ complex nxn matrix: 		ZGEEVX
